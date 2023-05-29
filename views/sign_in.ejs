@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%=title%></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    body {
+      background-color: #6a11cb;
+    }
+
+    .card {
+      border-radius: 1rem;
+    }
+
+    .card-header {
+      background-color: transparent;
+      border-bottom: none;
+    }
+
+    .card-body {
+      padding: 3rem;
+    }
+
+    .card-title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .card-text {
+      color: #f8f9fa;
+      margin-bottom: 2rem;
+    }
+
+    .form-control {
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      border-bottom: 2px solid #f8f9fa;
+      color: #f8f9fa;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #f8f9fa;
+    }
+
+    .btn {
+      background-color: transparent;
+      border: 1px solid #f8f9fa;
+      border-radius: 2rem;
+      color: #f8f9fa;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 0.8rem 2.5rem;
+    }
+
+    .btn:hover {
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    .social-icons {
+      font-size: 1.5rem;
+    }
+
+    .social-icons a {
+      color: #f8f9fa;
+      margin: 0 0.5rem;
+    }
+
+    .social-icons a:hover {
+      color: #212529;
+    }
+
+    .small-link {
+      color: #f8f9fa;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .small-link:hover {
+      color: #f8f9fa;
+      text-decoration: underline;
+    }
+
+    .sign-up-link {
+      color: #f8f9fa;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .sign-up-link:hover {
+      color: #f8f9fa;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<section class="modal-fullscreen-lg-down">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white">
+          <div class="card-header"></div>
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-1 mt-md-1 pb-3">
+
+              <h2 class="card-title">Login</h2>
+              <p class="card-text">Please enter your login and password!</p>
+
+              <form action="/create-session" method="post">
+
+                <div class="form-group">
+                  <label for="typeEmailX" class="form-label fw-bold">Email</label>
+                  <input type="email" name="email" required id="typeEmailX" class="form-control form-control-lg">
+                </div>
+
+                <div class="form-group mt-5">
+                  <label for="typePasswordX" class="form-label fw-bold">Password</label>
+                  <input type="password" name="password" required id="typePasswordX" class="form-control form-control-lg">
+                </div>
+
+                <p class="small small-link"><a href="#!" class="text-white-50">Forgot password?</a></p>
+
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+
+              </form>
+
+              <div>
+                <p class="mt-4">Or Sign In using social accounts</p>
+              </div>
+
+              <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                <a href="/auth/google" class="social-icons"><i class="fab fa-google"></i></a>
+                <!-- <a href="#!" class="social-icons"><i class="fab fa-twitter"></i></a>
+                <a href="#!" class="social-icons"><i class="fab fa-facebook-f"></i></a> -->
+              </div>
+
+            </div>
+
+            <div>
+              <p class="mb-0 sign-up-link">Don't have an account? <a href="/sign-up" class="text-white-50">Sign Up</a></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>
